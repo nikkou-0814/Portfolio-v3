@@ -5,7 +5,7 @@
 
 .helloworld{
     background-color: rgba(111, 111, 111, 0);
-    min-width: 400px;
+    min-width: 300px;
     max-width: 800px;
     min-height: 470px;
     max-height: 640px;
@@ -28,6 +28,7 @@
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s;
+    border: solid rgb(200, 200, 200) 0.1px;
 }
 
 .profile:hover{
@@ -43,6 +44,7 @@
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s;
+    border: solid rgb(200, 200, 200) 0.1px;
 }
 
 .skill:hover{
@@ -58,6 +60,7 @@
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s;
+    border: solid rgb(200, 200, 200) 0.1px;
 }
 
 .noob:hover{
@@ -67,7 +70,7 @@
 
 .history{
     background-color: rgba(111, 111, 111, 0);
-    min-width: 400px;
+    min-width: 300px;
     max-width: 800px;
     height: auto;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.112);
@@ -77,8 +80,8 @@
 }
 
 .historys{
-    min-width: 350px;
-    max-width: 75%;
+    min-width: 250px;
+    max-width: 85%;
     width: 650px;
     height: auto;
     background-color: rgba(111, 111, 111, 0);
@@ -95,12 +98,45 @@
 
 .historytext{
     text-align: center;
-    font-size: 22px;
-    line-height: 40px
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .historyday{
     text-align: center;
     font-size: 15px;
     margin-top: -20px;
+    color: rgb(90, 90, 90)
 }
+
+.hello{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.hello-mo-text{
+    text-align: center;
+    animation-name:hellomotext;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes hellomotext{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
