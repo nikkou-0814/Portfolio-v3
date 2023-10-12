@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleSheet/header.css">
-    <link rel="stylesheet" href="StyleSheet/main.css">
+    <link rel="stylesheet" href="Styleimage/header.css">
+    <link rel="stylesheet" href="Styleimage/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Portfolio-v3</title>
 </head>
-<body class="body">
+<body id="cursor" class="body">
     <div class="hello" id="hellomodal">
         <p class="hello-mo-text">Welcome to my Portfolio.<br>Thank you for viewing :)</p>
     </div>
@@ -20,7 +20,7 @@
                 <div class="header-text-home"><a href="index.html" style="text-decoration: none;"><p class="header-text">
                     Home
                 </p></a></div>
-                <div class="header-text-works"><a href="#" style="text-decoration: none;"><p class="header-text">
+                <div class="header-text-works"><a href="works.html" style="text-decoration: none;"><p class="header-text">
                     Works
                 </p></a></div>
                 <div class="header-text-task"><a href="#" style="text-decoration: none;"><p class="header-text">
@@ -37,29 +37,35 @@
     </header>
 
     <div class="helloworld">
-        <a href="index.html"><img src="images/blackicon.png" style="height: 50px; margin: auto; padding-top: 20px; display: block; "></a>
+        <img src="Styleimage/images/blackicon.png" style="height: 50px; margin: auto; padding-top: 20px; display: block;">
         <p class="hwtext">HelloWorld! My name is Kotaro Ito.</p>
         <div style="display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-start;">
             <div class="profile">
-                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: cornflowerblue;">Profile</p>
-                <p class="hwtext" style="margin-top: -20px;">Name : Kotaro Ito<br>Age : 14<br>Birthday : 2009/08/14<br>Profession : Student<br>Game : VALORANT</p>
+                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: rgb(50, 50, 50);">Profile</p>
+                <p class="hwtext" style="margin-top: -30px; line-height: 20px;">Age : 14<br>Name : Kotaro Ito<br>Birthday : 2009/08/14<br>Profession : Student<br>Game : VALORANT</p>
             </div>
             <div class="skill">
-                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: #c9cc02">Skill</p>
-                <p class="hwtext" style="margin-top: -20px;">Frontend : HTML, CSS<br>Backend : Python, PHP(little)<br>UltraSuperSpecialSkill : コミュ障<br>Tools : AfterEffects, GitHub, VSCode, Vercel</p>
+                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: rgb(50, 50, 50);">Skills</p>
+                <p class="hwtext" style="margin-top: -30px;">Frontend : HTML, CSS<br>Backend : Python, PHP(little)<br>UltraSuperSpecialSkill : コミュ障<br>Tools : AfterEffects, GitHub, VSCode, Vercel</p>
             </div>
             <div class="noob">
-                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: rgb(172, 124, 12);">Noob</p>
-                <p class="hwtext" style="margin-top: -20px;">Subject : Math<br>Foods : Mushroom<br>Codeing : PHP<br>Motion : Physical strength</p>
+                <p style="text-align: center; margin-top: 5px; font-size: 30px; color: rgb(50, 50, 50);">Noobs</p>
+                <p class="hwtext" style="margin-top: -30px;">Subject : Math<br>Codeing : PHP<br>Foods : Mushroom<br>Motion : Physical strength</p>
+            </div>
+            <div class="learn">
+                <a href="task.html" style="text-decoration: none;">
+                    <p style="text-align: center; margin-top: 5px; font-size: 30px; color: rgb(50, 50, 50);">Learn Next ></p>
+                    <p class="hwtext" style="margin-top: -20px; line-height: 27px;">Tools : GarageBand<br>Backend : Java, Ruby<br>Frontend : JavaScript, React, Next.js</p>
+                </a>
             </div>
         </div>
         <div style="height: 20px;"></div>
     </div>
 
     <div class="history">
-        <p style="text-align: center; margin-top: 40px; font-size: 30px; color: rgb(255, 44, 44);">History</p>
-        <div class="historys" style="background-color: #f7f478; box-shadow: 0 0 15px 4px #f7f478; ">
-            <p class="historytext">ワイ誕生</p>
+        <p style="text-align: center; margin-top: 40px; font-size: 30px; color: rgb(50, 50, 50);">History</p>
+        <div class="historys" style="background-color: #c1ecdfbe; box-shadow: 0 0 15px 4px #c1ecdf; ">
+            <p class="historytext">この世に降臨(^o^)</p>
             <p class="historyday">August 14, 2009</p>
         </div>
 
@@ -68,7 +74,7 @@
             <p class="historyday">2012</p>
         </div>
 
-        <div class="historys" style="background-color: #f7f478; box-shadow: 0 0 15px 4px #f7f478;">
+        <div class="historys" style="background-color: #c1ecdfbe; box-shadow: 0 0 15px 4px #c1ecdf;">
             <p class="historytext">小学校に入学</p>
             <p class="historyday">April, 2016</p>
         </div>
@@ -83,18 +89,18 @@
             <p class="historyday">2019</p>
         </div>
 
-        <div class="historys" style="background-color: #f7f478; box-shadow: 0 0 15px 4px #f7f478;">
-            <p class="historytext">岡山県から引っ越し！</p>
+        <div class="historys" style="background-color: #c1ecdfbe; box-shadow: 0 0 15px 4px #c1ecdf;">
+            <p class="historytext">岡山県から引っ越し！お世話になりました！</p>
             <p class="historyday">March, 2022</p>
         </div>
 
-        <div class="historys" style="background-color: #f7f478; box-shadow: 0 0 15px 4px #f7f478;">
+        <div class="historys" style="background-color: #c1ecdfbe; box-shadow: 0 0 15px 4px #c1ecdf;">
             <p class="historytext">中学校に入学</p>
             <p class="historyday">April, 2022</p>
         </div>
 
         <div class="historys" style="background-color: rgb(111, 111, 111, 0.04);">
-            <p class="historytext">HTML, CSS などをさわる</p>
+            <p class="historytext">HTML, CSSなどをさわり始める</p>
             <p class="historyday">2022</p>
         </div>
 
@@ -104,7 +110,7 @@
         </div>
 
         <div class="historys" style="background-color: rgb(111, 111, 111, 0.04);">
-            <p class="historytext">htmlコーディングを本格的に始めた<br>で作ったサイトがこのポートフォリオ</p>
+            <p class="historytext">htmlコーディングを本格的に始めた<br>で作ってるのがこのポートフォリオたち</p>
             <p class="historyday">September, 2023</p>
         </div>
 
