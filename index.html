@@ -12,11 +12,13 @@
     <title>Portfolio-v3</title>
 </head>
 <body id="cursor" class="body">
-    <div class="helloback" id="hello-back">
-        <p class="hello-mo-text" id="hello-text">Welcome to my Portfolio.<br>Thank you for viewing :)</p>
-    </div>
     <div class="hello" id="hellomodal"></div>
-    <img src="/Styleimage/images/Lake Reeds Sunset.jpg" class="hello-img" id="helloimg">
+    <div id="hello-mo-div">
+        <div class="helloback" id="hello-back">
+            <p class="hello-mo-text" id="hello-text">Welcome to my Portfolio.<br>Thank you for viewing :)</p>
+        </div>
+        <img src="/Styleimage/images/Lake Reeds Sunset.jpg" class="hello-img" id="helloimg">
+    </div>
 
     <header>
         <div class="header">
@@ -125,31 +127,6 @@
         <div style="height: 10px;"></div>
     </div>
     <div style="height: 100px;"></div>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            var scrollingElement = document.getElementById("hellomodal");
-            scrollingElement.style.top = "-100vh";
-        }, 3000);
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            var scrollingElement = document.getElementById("hello-text");
-            scrollingElement.style.top = "-100vh";
-        }, 3000);
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            var scrollingElement = document.getElementById("hello-back");
-            scrollingElement.style.top = "-100vh";
-        }, 3000);
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            var scrollingElement = document.getElementById("helloimg");
-            scrollingElement.style.top = "-100vh";
-        }, 3000);
-    });
-    </script>
+    <script src="Script/script.js"></script>
 </body>
 </html>
