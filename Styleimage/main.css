@@ -178,9 +178,11 @@
     height: 100vh;
     display:block;
     object-fit: cover;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hello-mo-text{
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     text-align: center;
     animation-name:hellomotext;
     animation-duration:3s;
