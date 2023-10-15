@@ -3,6 +3,6 @@
 #Licence
 Image by <a href="https://pixabay.com/users/tommarc-890614/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=696098">Tomasz Marciniak</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=696098">Pixabay</a>
 
-created by bharat and anatoly icons - Flaticon
+<a href="https://www.flaticon.com/free-icons/download">Created by Bharat and Anatoly icons - Flaticon</a>
 
-github icons
+<a href="https://github.com/icons">GitHub Icons</a>
