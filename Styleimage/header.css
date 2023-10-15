@@ -11,7 +11,7 @@
     bottom: 0;
     transition: all 0.5s;
     margin-top:-22px;
-    z-index: 9999;
+    z-index: 500;
 }
 
 .header-links{

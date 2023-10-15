@@ -1,0 +1,35 @@
+.task{
+    background-color: rgba(255, 255, 255, 0.3);
+    min-width: 300px;
+    max-width: 800px;
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.tasks{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 350px;
+    height: auto;
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+#progress{
+    height: 20px;
+    width: 80%;
+}
+
+.tasks:hover{
+    transform: translateY(-4px);
+}
