@@ -123,6 +123,13 @@
         <div style="height: 10px;"></div>
     </div>
     <div style="height: 100px;"></div>
-    <script src="Script/script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var scrollingElement = document.getElementById("hellomodal");
+            scrollingElement.style.top = "-100vh";
+        }, 3000);
+    });
+    </script>
 </body>
 </html>
