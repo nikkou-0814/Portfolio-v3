@@ -159,21 +159,25 @@
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.hello-back{
+.helloback{
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 9998;
+    z-index: 9999;
     top: 0;
     left: 0;
     display: flex;
-    background-color: rgb(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    transition: top 1s ease-out;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hello-img{
     position: fixed;
+    z-index: 9998;
     width: 100%;
     height: 100vh;
     display:block;
@@ -182,20 +186,7 @@
 
 .hello-mo-text{
     text-align: center;
-    animation-name:hellomotext;
-    animation-duration:3s;
-    animation-fill-mode:forwards;
+    z-index: 9999;
     color: white;
     z-index: 9999;
-    opacity:0;
-    }
-    
-    @keyframes hellomotext{
-      from {
-        opacity: 0;
-      }
-    
-      to {
-        opacity: 1;
-      }
-    }
+}

@@ -12,11 +12,11 @@
     <title>Portfolio-v3</title>
 </head>
 <body id="cursor" class="body">
-    <div class="hello" id="hellomodal">
-        <p class="hello-mo-text">Welcome to my Portfolio.<br>Thank you for viewing :)</p>
-        <div class="hello-back" id="hello-mo-back"></div>
-        <img src="/Styleimage/images/Lake Reeds Sunset.jpg" class="hello-img">
-    </div>
+        <div class="hello" id="hellomodal">
+            <div class="helloback"></div>
+            <p class="hello-mo-text">Welcome to my Portfolio.<br>Thank you for viewing :)</p>
+            <img src="/Styleimage/images/Lake Reeds Sunset.jpg" class="hello-img">
+        </div>
     <header>
         <div class="header">
             <div class="header-links">
@@ -128,12 +128,6 @@
     document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
             var scrollingElement = document.getElementById("hellomodal");
-            scrollingElement.style.top = "-100vh";
-        }, 3000);
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            var scrollingElement = document.getElementById("hello-mo-back");
             scrollingElement.style.top = "-100vh";
         }, 3000);
     });
