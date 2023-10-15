@@ -164,15 +164,9 @@
     width: 100%;
     height: 100vh;
     z-index: 10001;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    transition: top 1s ease-out;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hello-img{
@@ -187,8 +181,10 @@
     align-items: center;
     display:block;
     object-fit: cover;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    margin: -10px;
+    width: calc(100% + 20px);
     transition: top 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -201,4 +197,18 @@
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     text-align: center;
     color: white;
+    animation-name:hello;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+
+    @keyframes hello{
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
 }
