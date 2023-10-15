@@ -5,4 +5,4 @@ Image by <a href="https://pixabay.com/users/tommarc-890614/?utm_source=link-attr
 
 <a href="https://www.flaticon.com/free-icons/download">Created by Bharat and Anatoly icons - Flaticon</a>
 
-<a href="https://github.com/icons">GitHub Icons</a>
+<a href="https://github.com/logos">GitHub Logos</a>
