@@ -161,7 +161,7 @@
 
 .hello-back{
     position: fixed;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     z-index: 9998;
     top: 0;
