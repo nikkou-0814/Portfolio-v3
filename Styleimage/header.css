@@ -64,6 +64,19 @@
     border-radius: 10px;
 }
 
+.header-text-blog{
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    transition: all 0.3s;
+    line-height: 10px;
+}
+
+.header-text-blog:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
 .header-text-acc{
     width: 80px;
     margin: auto;
