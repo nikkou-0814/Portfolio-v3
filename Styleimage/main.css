@@ -182,9 +182,9 @@
     align-items: center;
     display:block;
     object-fit: cover;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-    margin: -10px;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    margin: -5px;
     width: calc(100% + 20px);
     transition: top 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
