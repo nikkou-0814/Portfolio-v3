@@ -1,4 +1,5 @@
 # Portfolio-v3
+### ほとんどv2と一緒なのは秘密🤫
 ### 次のポートフォリオはちょいと派手なデザインを作りたい！
 # Licences
 HelloMordal Back Ground
