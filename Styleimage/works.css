@@ -19,7 +19,7 @@
 .works{
     background-color: rgba(255, 255, 255, 0.4);
     width: 350px;
-    height: 250px;
+    min-height: 250px;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 10px;

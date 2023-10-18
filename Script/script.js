@@ -30,6 +30,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 300);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        var scrollingElement = document.getElementById("notificationheadermodal");
+        scrollingElement.style.top = "50px";
+        scrollingElement.style.left = "50px";
+    }, 200);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        var scrollingElement = document.getElementById("notificationheadermodalhome");
+        scrollingElement.style.top = "50px";
+        scrollingElement.style.left = "50px";
+    }, 5400);
+});
+
 ityped.init(document.querySelector("#ityped"), {
     strings: ['Welcome to my Portfolio!', 'Thank you for viewing! :)']
 
