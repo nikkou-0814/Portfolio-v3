@@ -267,7 +267,7 @@
     border-radius: 0 0 10px 0;
     transition: top left 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: -50px;
+    margin: -60px;
 }
 
 .notificationhome{
@@ -286,7 +286,7 @@
     border-radius: 0 0 10px 0;
     transition: top left 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: -50px;
+    margin: -60px;
 }
 
 .notificationtext{

@@ -33,16 +33,16 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("notificationheadermodal");
-        scrollingElement.style.top = "50px";
-        scrollingElement.style.left = "50px";
+        scrollingElement.style.top = "60px";
+        scrollingElement.style.left = "60px";
     }, 200);
 });
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("notificationheadermodalhome");
-        scrollingElement.style.top = "50px";
-        scrollingElement.style.left = "50px";
+        scrollingElement.style.top = "60px";
+        scrollingElement.style.left = "60px";
     }, 5400);
 });
 
