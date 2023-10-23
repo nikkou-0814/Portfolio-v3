@@ -4,18 +4,21 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollingElement.style.top = "-120vh";
     }, 5400);
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("hello-text");
         scrollingElement.style.top = "-120vh";
     }, 5400);
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("hello-back");
         scrollingElement.style.top = "-120vh";
     }, 5400);
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("helloimg");
@@ -33,16 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("notificationheadermodal");
-        scrollingElement.style.top = "60px";
-        scrollingElement.style.left = "60px";
+        scrollingElement.style.top = "80px";
+        scrollingElement.style.left = "80px";
     }, 200);
 });
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("notificationheadermodalhome");
-        scrollingElement.style.top = "60px";
-        scrollingElement.style.left = "60px";
+        scrollingElement.style.top = "80px";
+        scrollingElement.style.left = "80px";
     }, 5400);
 });
 

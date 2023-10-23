@@ -257,7 +257,7 @@
     height: 50px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px -3px rgb(111, 111, 111);
+    box-shadow: 0 0 10px -3px #c1ecdf;
     display: flex;
     position: fixed;
     left: 0;
@@ -267,7 +267,11 @@
     border-radius: 0 0 10px 0;
     transition: top left 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: -60px;
+    margin: -80px;
+    -webkit-animation: notification 1s infinite;
+    -moz-animation: notification 1s infinite;
+    animation: notification 1s infinite;
+    animation-direction: alternate;
 }
 
 .notificationhome{
@@ -276,7 +280,7 @@
     height: 50px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px -3px rgb(111, 111, 111);
+    box-shadow: 0 0 10px -3px #c1ecdf;
     display: flex;
     position: fixed;
     left: 0;
@@ -286,7 +290,11 @@
     border-radius: 0 0 10px 0;
     transition: top left 1s ease-out;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: -60px;
+    margin: -80px;
+    -webkit-animation: notification 1s infinite;
+    -moz-animation: notification 1s infinite;
+    animation: notification 1s infinite;
+    animation-direction: alternate;
 }
 
 .notificationtext{
@@ -295,4 +303,22 @@
     margin: 10px;
     color: black;
     font-size: 25px;
+}
+
+@keyframes notification {
+    100% {
+        box-shadow: 0 0 15px 4px #c1ecdf;
+    }
+}
+
+@-webkit-keyframes notification {
+    100% {
+        box-shadow: 0 0 15px 4px #c1ecdf;
+    }
+}
+
+@-moz-keyframes notification {
+    100% {
+        box-shadow: 0 0 15px 4px #c1ecdf;
+    }
 }
