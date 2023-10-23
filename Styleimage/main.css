@@ -19,13 +19,13 @@
 }
 
 .hwtext{
-    color: rgb(70, 70, 70);
     text-align: center;
     line-height: 23px;
+    color: rgb(70, 70, 70)
 }
 
 .profile{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(111, 111, 111, 0.04);
     width: 350px;
     height: 150px;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
@@ -43,7 +43,7 @@
 }
 
 .skill{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(111, 111, 111, 0.04);
     width: 350px;
     height: 150px;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@
 }
 
 .noob{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(111, 111, 111, 0.04);
     width: 350px;
     height: 140px;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@
 }
 
 .learn{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(111, 111, 111, 0.04);
     width: 350px;
     height: 140px;
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
@@ -115,7 +115,6 @@
     max-width: 85%;
     width: 650px;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: auto;

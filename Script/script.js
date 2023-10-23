@@ -61,16 +61,13 @@ ityped.init(document.querySelector("#ityped"), {
 
 document.addEventListener("DOMContentLoaded", function() {
     const themeToggle = document.getElementById("theme-toggle");
-    const themeText = document.getElementById("theme-text");
     const body = document.body;
 
     themeToggle.addEventListener("change", () => {
         if (themeToggle.checked) {
-            body.classList.add("dark-theme");
-            themeText.innerText = "Dark Theme";
+            body.classList.add("dark-theme","helloworlddark");
         } else {
             body.classList.remove("dark-theme");
-            themeText.innerText = "Light Theme";
         }
     });
 });
