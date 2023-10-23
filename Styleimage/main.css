@@ -1,6 +1,5 @@
 .body{
     font-family: 'Roboto', sans-serif;
-    background-color: white;
 }
 
 #cursor {
@@ -134,6 +133,7 @@
     text-align: center;
     font-size: 20px;
     line-height: 40px;
+    color: black;
 }
 
 .historyday{
@@ -321,4 +321,61 @@
     100% {
         box-shadow: 0 0 15px 4px #c1ecdf;
     }
+}
+
+.darkswitch{
+    position: absolute;
+    right: 10px;
+}
+
+body {
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #333333;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #bebebe;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.round {
+    border-radius: 34px;
 }
