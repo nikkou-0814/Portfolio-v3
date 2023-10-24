@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     themeToggle.addEventListener("change", () => {
         if (themeToggle.checked) {
-            body.classList.add("dark-theme","helloworlddark");
+            body.classList.add("dark-theme");
         } else {
             body.classList.remove("dark-theme");
         }
