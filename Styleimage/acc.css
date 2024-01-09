@@ -2,7 +2,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     min-width: 300px;
     max-width: 800px;
-    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.1);
     margin: auto;
     border-radius: 10px;
     margin-top: 20px;
@@ -14,7 +14,7 @@
 .accs{
     background-color: rgba(255, 255, 255, 0.3);
     width: 250px;
-    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 10px;
     margin-top: 20px;
@@ -28,5 +28,6 @@
 .accs:hover{
     transform: translateY(-5px);
     background-color: #c1ecdfbe;
-    box-shadow: 0 0 10px 2px #c1ecdf;
+    box-shadow: 0 0 20px 2px #c1ecdf;
+    
 }
