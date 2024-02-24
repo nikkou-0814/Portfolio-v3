@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styleimage/header.css">
+    <link rel="stylesheet" href="Styleimage/main.css">
+    <link rel="stylesheet" href="Styleimage/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Styleimage/images/whiteicon.png">
+    <title>Account</title>
+</head>
+<body id="cursor" class="body">
+    <div class="notification" id="notificationheadermodal" style="width: 105px;">
+        <p class="notificationtext">Testing</p>
+    </div>
+    <header>
+        <div class="header">
+            <div class="header-links">
+                <div class="header-text-home"><a href="index.html" style="text-decoration: none;"><p class="header-text">
+                    Home
+                </p></a></div>
+                <div class="header-text-works"><a href="works.html" style="text-decoration: none;"><p class="header-text">
+                    Works
+                </p></a></div>
+                <div class="header-text-task"><a href="tasks.html" style="text-decoration: none;"><p class="header-text">
+                    Tasks
+                </p></a></div>
+                <div class="header-text-acc"><a href="test.html" style="text-decoration: none;"><p class="header-text">
+                    Testing
+                </p></a></div>
+                <div class="header-text-v2"><a href="https://v2.nikkou.nagoya" style="text-decoration: none;"><p class="header-text">
+                    v2
+                </p></a></div>
+            </div>
+        </div>
+    </header>
+    <div class="acc">
+        <p style="padding-top: 20px; font-size: 30px;">Recent EarthQuake</p>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-start;">
+            <div class="quakes">
+                <div style="display: flex; text-align: left;">
+                    <div class="maxIntensity" id="maxIntensity">
+                        <h2 id="earthquakeMaxIntensity">-</h2>
+                    </div>
+                    <div>
+                        <h2 id="earthquakeLocation">-- --</h2>
+                        <h2 id="earthquakeTime">--日--時--分</h2>
+                        <div style="display: flex;">
+                            <h2 id="earthquakeMagnitude">M -.-</h2>
+                            <h2 id="EarthquakeDepth">深さ：--km</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 15px; text-align: end; padding-right: 20px;">情報提供：P2P地震情報 API、気象庁</p>
+        <div style="height: 5px;"></div>
+    </div>
+
+    <footer class="testingfooter">
+        <p style="font-size: 15px; padding-right: 10px; padding-left: 10px; font-weight: 700;">※これらはテスト機能ですので、これらの機能により何らかの損害が発生した場合は、責任を負いかねますのでご了承ください。</p>
+    </footer>
+
+    <script>
+        // 地震情報を取得
+        async function fetchEarthquakeData() {
+            // eew_parserを使用して地震情報を取得
+            const response = await fetch('https://api.p2pquake.net/v1/human-readable?limit=1');
+            const data = await response.json();
+        
+            console.log(data);
+        
+            if (data[0].earthquake) {
+                var maxIntensity = data[0].earthquake.maxScale / 10;
+                document.getElementById('earthquakeTime').innerHTML = data[0].earthquake.time;
+                document.getElementById('earthquakeLocation').innerHTML = data[0].earthquake.hypocenter.name;
+                document.getElementById('earthquakeMagnitude').innerHTML = "M " + data[0].earthquake.hypocenter.magnitude;
+                document.getElementById('EarthquakeDepth').innerHTML = "深さ: " + data[0].earthquake.hypocenter.depth;
+                document.getElementById('earthquakeMaxIntensity').innerHTML = maxIntensity;
+                var intensityElement = document.getElementById('maxIntensity');
+                var maxtext = document.getElementById('earthquakeMaxIntensity');
+                if (maxIntensity == 1) {
+                    intensityElement.style.backgroundColor = "gray";
+                    maxtext.style.color = "white";
+                } else if (maxIntensity == 2) {
+                    intensityElement.style.backgroundColor = "rgb(65, 65, 255)";
+                    maxtext.style.color = "white";
+                } else if (maxIntensity == 3) {
+                    intensityElement.style.backgroundColor = "rgb(0, 212, 0)";
+                    maxtext.style.color = "black";
+                } else if (maxIntensity == 4) {
+                    intensityElement.style.backgroundColor = "rgb(219, 219, 23)";
+                    maxtext.style.color = "black";
+                } else if (maxIntensity == 5) {
+                    intensityElement.style.backgroundColor = "rgb(255, 170, 0)";
+                    maxtext.style.color = "black";
+                } else if (maxIntensity == 6) {
+                    intensityElement.style.backgroundColor = "rgb(255, 0, 0)";
+                    maxtext.style.color = "white";
+                } else if (maxIntensity == 7) {
+                    intensityElement.style.backgroundColor = "rgb(255, 0, 255)";
+                    maxtext.style.color = "white";
+                }
+            } else {
+                document.getElementById('earthquakeTime').innerHTML = "";
+                document.getElementById('earthquakeLocation').innerHTML = "地震情報なし";
+                document.getElementById('earthquakeMagnitude').innerHTML = "";
+                document.getElementById('earthquakeMaxIntensity').innerHTML = "";
+            }
+        }
+        
+        // 一定時間ごとに地震情報を再取得
+        setTimeout(fetchEarthquakeData, 5000);
+
+        fetchEarthquakeData();
+        </script>
+    <script src="Script/script.js"></script>
+</body>
+</html>
